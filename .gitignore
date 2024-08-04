@@ -1,0 +1,4 @@
+node_modules
+omxpipe*
+*.mp4
+.DS_Store

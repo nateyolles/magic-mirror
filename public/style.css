@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1e1e33;
+    padding: 5px;
+}
+
+main {
+    margin: 5px;
+}
