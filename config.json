@@ -1,19 +1,19 @@
 {
     "audioOutput": "hdmi",
     "randomInterval": 300,
-    "portNumber": 3000,
+    "portNumber": 8080,
     "videos": [
         {
             "title" : "Diabolic Debutant Startle",
-            "path": "/videos/Diabolic Debutant_Startle Scare_Win_V.mp4"
+            "path": "videos/Diabolic\\ Debutant_Startle\\ Scare_Win_V.mp4"
         },
         {
             "title" : "Shocking Shade Startle",
-            "path": "/videos/Shocking Shade_Startle Scare_Win_V.mp4"
+            "path": "videos/Shocking\\ Shade_Startle\\ Scare_Win_V.mp4"
         },
         {
             "title" : "Slender Specter Startle",
-            "path": "/videos/Slender Specter_Startle Scare_Win_V.mp4"
+            "path": "videos/Slender\\ Specter_Startle\\ Scare_Win_V.mp4"
         }
     ]
 }
