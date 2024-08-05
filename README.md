@@ -1,6 +1,14 @@
 # magic-mirror
 Webserver for my Raspberry Pi based smart mirror video player
 
+## Test cURLs
+
+```
+curl -d -H 'Content-Type: application/json' http://magicmirror.local:8080/videos/play/0 -v
+curl -d -H 'Content-Type: application/json' http://magicmirror.local:8080/videos/play/1 -v
+curl -d -H 'Content-Type: application/json' http://magicmirror.local:8080/videos/play/2 -v
+```
+
 ## Hide boot text
 
 ### Works

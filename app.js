@@ -21,9 +21,19 @@ app.post('/videos/play/:videoId', (req, res) => {
     // childProcess.exec('vlc videos/Slender\ Specter_Startle\ Scare_Win_V.mp4 --no-video-title-show --fullscreen', (msg) => {
     //     console.log(msg);
     // });
-    const vlc = spawn('cvlc', [config.videos[req.params.videoId].path, '--no-video-title-show', '--fullscreen']);
-    res.send(`Got a POST request with video ID: ${config.videos[req.params.videoId].path}`);
-})
+    const index = req.params.videoId;
+    const path = config.videos[index].path;
+
+    console.log(`POST for play received. Index: ${index}, Path: ${path}`);
+    const vlc = spawn('cvlc', [path, '--no-video-title-show', '--fullscreen']);
+    vlc.stderr.on('data', function(data) {
+        console.log('Error: ' + data.toString());
+    });
+    vlc.on('exit', function(code){
+        console.log('Exit code: ' + code);
+    });
+    res.send(`POST for play received. Index: ${index}, Path: ${path}`);
+});
 
 app.listen(port, () => {
     console.log(`started on ${port}`);
